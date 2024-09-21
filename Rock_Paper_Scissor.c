@@ -5,7 +5,7 @@
 void computer(int choice,int *uScore, int *cScore){
 
     int compNum, send;
-    char compChoice1[]="Rock", compChoice2[]="Paper", compChoice3[]="Scissor";
+    char compChoice1[]="Rock", compChoice2[]="Paper", compChoice3[]="Scissors";
 
     srand(time(NULL));
     compNum = rand()%100;
@@ -27,7 +27,7 @@ void computer(int choice,int *uScore, int *cScore){
         else if(choice==2)
             printf("You both have chosen Paper!\n");
         else
-            printf("You both have chosen Scissor!\n");
+            printf("You both have chosen Scissors!\n");
     }
 
     else if(choice==1 && send==2){
@@ -37,7 +37,7 @@ void computer(int choice,int *uScore, int *cScore){
     }
 
     else if(choice==1 && send==3){
-        printf("Mr. Computer has chosen SCISSOR\n");
+        printf("Mr. Computer has chosen SCISSORS\n");
         printf("Hooray! You have won!\(*v*)/\n");
         (*uScore)++;
     }
@@ -49,7 +49,7 @@ void computer(int choice,int *uScore, int *cScore){
     }
 
     else if(choice==2 && send==3){
-        printf("Mr. Computer has chosen SCISSOR\n");
+        printf("Mr. Computer has chosen SCISSORS\n");
         printf("Better luck next time buddy...\n");
         (*cScore)++;
     }
@@ -76,12 +76,12 @@ int main(){
     printf("\n");
 
     printf("         HELLO %s!\n", userName);
-    printf("WELCOME TO ROCK PAPER AND SCISSOR!\n");
+    printf("WELCOME TO ROCK PAPER AND SCISSORS!\n");
 
 
 do{
     for(i=0;i<3;i++){
-        printf("\n1. Rock\n2. Paper\n3. Scissor\n\n");
+        printf("\n1. Rock\n2. Paper\n3. Scissors\n\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
